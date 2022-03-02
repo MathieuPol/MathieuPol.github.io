@@ -1,0 +1,18 @@
+
+html {
+    font-size: 62.5%;
+    --bg-color: cyan;
+}
+
+body {
+    font-size: 2rem;
+}
+
+h1 {
+    background-color: var(--bg-color);
+    text-align: center;
+}
+
+h1, h2 {
+    text-decoration: underline;
+}
