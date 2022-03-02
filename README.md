@@ -1,1 +1,1 @@
-# mp
+On commence doucement avec le squelette du CV
