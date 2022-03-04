@@ -6,6 +6,7 @@ html {
 
 body {
     font-size: 2rem;
+    text-align: center;
 }
 
 h1 {
@@ -15,4 +16,15 @@ h1 {
 
 h1, h2 {
     text-decoration: underline;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+li {
+    width: 50%;
+    list-style-type: disc;
 }
