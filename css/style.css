@@ -7,6 +7,13 @@ html {
 body {
     font-size: 2rem;
     text-align: center;
+    background-color:gray;
+    box-shadow: ;
+}
+
+img {width: 25rem;
+    border-radius: 20rem;
+    box-shadow: 3px 3px red, -1em 0 .4em #ffff;
 }
 
 h1 {
