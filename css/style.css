@@ -1,14 +1,15 @@
 
 html {
     font-size: 62.5%;
-    --bg-color: cyan;
+    background-color:gray;
 }
 
 body {
     font-size: 2rem;
     text-align: center;
-    background-color:gray;
-    box-shadow: ;
+    margin: 5rem 10rem;
+    color: white;
+
 }
 
 img {width: 25rem;
@@ -29,9 +30,32 @@ ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 li {
-    width: 50%;
-    list-style-type: disc;
+    width: 40%;
+    list-style-type: none;
+    text-transform: uppercase;
+    border: solid;
+    margin: 2rem;
+    border-radius: 5rem;
+    color: black;
+}
+
+
+.left {box-shadow: rgba(240, 46, 170, 0.4)  -5px -5px, rgba(240, 46, 170, 0.3) -10px -10px, rgba(240, 46, 170, 0.2) -15px -15px, rgba(240, 46, 170, 0.1) -20px -20px, rgba(240, 46, 170, 0.05) -25px -25px;
+background-color: white;
+}
+
+.right {box-shadow: rgba(240, 46, 170, 0.4) 5px -5px, rgba(240, 46, 170, 0.3) 10px -10px, rgba(240, 46, 170, 0.2) 15px -15px, rgba(240, 46, 170, 0.1) 20px -20px, rgba(240, 46, 170, 0.05) 25px -25px;
+background-color: white;
+}
+
+li:hover,
+    li:focus {
+        transform: scale(1.5);
+
+
+
 }
