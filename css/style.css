@@ -1,7 +1,8 @@
 
 html {
     font-size: 62.5%;
-    background-color:gray;
+    background-color:#DCDCDC;
+    font-family: 'Dancing Script', cursive;
 }
 
 body {
@@ -12,9 +13,10 @@ body {
 
 }
 
-img {width: 25rem;
+header img {width: 25rem;
     border-radius: 20rem;
-    box-shadow: 3px 3px red, -1em 0 .4em #ffff;
+    text-align: center;
+    box-shadow: 3px 3px #2F4F4F, -1em 0 .4em #ffff;
 }
 
 h1 {
@@ -24,7 +26,54 @@ h1 {
 
 h1, h2 {
     text-decoration: underline;
+    ;
 }
+
+div {
+    display: grid;
+    position: fixed;
+    right: 1.5rem;
+    bottom: 6rem;
+    grid-template-columns: 5rem 5rem;
+    grid-template-rows: 5rem 5rem;
+}
+
+div img {
+    width: 5rem;
+    
+}
+div {
+    border: solid;
+    border-radius: 1rem;
+}
+
+aside> a {
+    width: 5rem;
+    background-color: #DCDCDC;
+    border-radius: 20rem;
+    border: solid white;
+    position: fixed;
+    left: 2rem;
+    bottom: 6rem;
+}
+aside>a:hover{
+    background-color: #2F4F4F;
+
+}
+
+.about {
+    background-color: 	#696969;
+    padding: 1rem 2rem 3rem 2rem;
+    margin: 1rem 3rem 1rem 3rem;
+    box-shadow: #DCDCDC 2rem 2rem;
+    border: solid;
+    border-radius: 5rem;
+}
+
+.about:hover,
+    .about:focus{
+        background-color: #2F4F4F;
+    }
 
 ul {
     display: flex;
@@ -33,29 +82,40 @@ ul {
     justify-content: space-between;
 }
 
-li {
-    width: 40%;
+article a {
+    width: 25%;
     list-style-type: none;
     text-transform: uppercase;
     border: solid;
     margin: 2rem;
     border-radius: 5rem;
-    color: black;
+    color: white;
+    background-color: #696969;
 }
 
 
-.left {box-shadow: rgba(240, 46, 170, 0.4)  -5px -5px, rgba(240, 46, 170, 0.3) -10px -10px, rgba(240, 46, 170, 0.2) -15px -15px, rgba(240, 46, 170, 0.1) -20px -20px, rgba(240, 46, 170, 0.05) -25px -25px;
-background-color: white;
-}
+/*.left {box-shadow: rgba(240, 46, 170, 0.4)  -5px -5px, rgba(240, 46, 170, 0.3) -10px -10px, rgba(240, 46, 170, 0.2) -15px -15px, rgba(240, 46, 170, 0.1) -20px -20px, rgba(240, 46, 170, 0.05) -25px -25px;
+*background-color: white;
+}*/
 
 .right {box-shadow: rgba(240, 46, 170, 0.4) 5px -5px, rgba(240, 46, 170, 0.3) 10px -10px, rgba(240, 46, 170, 0.2) 15px -15px, rgba(240, 46, 170, 0.1) 20px -20px, rgba(240, 46, 170, 0.05) 25px -25px;
 background-color: white;
 }
 
-li:hover,
-    li:focus {
+article a:hover,
+    article a:focus {
         transform: scale(1.5);
-
-
+        background-color: #2F4F4F;
+        color: #DCDCDC;
+        width: 25%;
 
 }
+
+article a {
+    text-decoration: none;
+}
+
+article a:hover {
+    color: white;
+}
+
