@@ -1,4 +1,116 @@
-display: contents;
+
+html {
+    font-size: 62.5%;
+    background-color:#DCDCDC;
+    font-family: 'Dancing Script', cursive;
+}
+
+body {
+    font-size: 2rem;
+    text-align: center;
+    margin: 5rem 10rem;
+    color: white;
+
+}
+    
+header img {width: 25rem;
+    border-radius: 20rem;
+    text-align: center;
+    box-shadow: 3px 3px #2F4F4F, -1em 0 .4em #ffff;
+}
+
+h1 {
+    background-color: var(--bg-color);
+    text-align: center;
+}
+
+h1, h2 {
+    text-decoration: underline;
+    ;
+}
+
+
+.about {
+    background-color: 	#696969;
+    padding: 1rem 2rem 3rem 2rem;
+    margin: 1rem 3rem 1rem 3rem;
+    box-shadow: #DCDCDC 2rem 2rem;
+    border: solid;
+    border-radius: 5rem;
+}
+
+.about:hover,
+    .about:focus{
+        background-color: #2F4F4F;
+        transition: 1s;
+    }
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+article a {
+    width: 25%;
+    list-style-type: none;
+    text-transform: uppercase;
+    border: solid;
+    margin: 2rem;
+    border-radius: 5rem;
+    color: white;
+    background-color: #696969;;
+}
+
+
+/*.left {box-shadow: rgba(240, 46, 170, 0.4)  -5px -5px, rgba(240, 46, 170, 0.3) -10px -10px, rgba(240, 46, 170, 0.2) -15px -15px, rgba(240, 46, 170, 0.1) -20px -20px, rgba(240, 46, 170, 0.05) -25px -25px;
+*background-color: white;
+}*/
+
+/*.right {box-shadow: rgba(240, 46, 170, 0.4) 5px -5px, rgba(240, 46, 170, 0.3) 10px -10px, rgba(240, 46, 170, 0.2) 15px -15px, rgba(240, 46, 170, 0.1) 20px -20px, rgba(240, 46, 170, 0.05) 25px -25px;
+background-color: white;
+}*/
+
+article a:hover,
+    article a:focus {
+        transform: scale(1.1);
+        transition: 1s;
+        background-color: #2F4F4F;
+        color: #DCDCDC;
+        width: 25%;
+
+}
+
+article a {
+    text-decoration: none;
+}
+
+article a:hover {
+    color: white;
+}
+
+h3 {
+    display: block;
+}
+.social__links {
+    display: grid;
+    position: fixed;
+    right: 1.5rem;
+    bottom: 6rem;
+    grid-template-columns: 5rem 5rem;
+    grid-template-rows: 5rem 5rem;
+}
+
+.social__links img {
+    width: 5rem;
+    
+}
+.social__links {
+    border: solid;
+    border-radius: 1rem;
+    position: relative;
+    display: contents;
 }
 
 footer> a {
@@ -110,16 +222,6 @@ footer> a{
     position: relative;
     display: block;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 }
