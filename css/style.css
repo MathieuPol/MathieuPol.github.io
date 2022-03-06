@@ -12,7 +12,7 @@ body {
     color: white;
 
 }
-
+    
 header img {width: 25rem;
     border-radius: 20rem;
     text-align: center;
@@ -29,37 +29,6 @@ h1, h2 {
     ;
 }
 
-div {
-    display: grid;
-    position: fixed;
-    right: 1.5rem;
-    bottom: 6rem;
-    grid-template-columns: 5rem 5rem;
-    grid-template-rows: 5rem 5rem;
-}
-
-div img {
-    width: 5rem;
-    
-}
-div {
-    border: solid;
-    border-radius: 1rem;
-}
-
-aside> a {
-    width: 5rem;
-    background-color: #DCDCDC;
-    border-radius: 20rem;
-    border: solid white;
-    position: fixed;
-    left: 2rem;
-    bottom: 6rem;
-}
-aside>a:hover{
-    background-color: #2F4F4F;
-
-}
 
 .about {
     background-color: 	#696969;
@@ -73,6 +42,7 @@ aside>a:hover{
 .about:hover,
     .about:focus{
         background-color: #2F4F4F;
+        transition: 1s;
     }
 
 ul {
@@ -90,7 +60,7 @@ article a {
     margin: 2rem;
     border-radius: 5rem;
     color: white;
-    background-color: #696969;
+    background-color: #696969;;
 }
 
 
@@ -98,13 +68,14 @@ article a {
 *background-color: white;
 }*/
 
-.right {box-shadow: rgba(240, 46, 170, 0.4) 5px -5px, rgba(240, 46, 170, 0.3) 10px -10px, rgba(240, 46, 170, 0.2) 15px -15px, rgba(240, 46, 170, 0.1) 20px -20px, rgba(240, 46, 170, 0.05) 25px -25px;
+/*.right {box-shadow: rgba(240, 46, 170, 0.4) 5px -5px, rgba(240, 46, 170, 0.3) 10px -10px, rgba(240, 46, 170, 0.2) 15px -15px, rgba(240, 46, 170, 0.1) 20px -20px, rgba(240, 46, 170, 0.05) 25px -25px;
 background-color: white;
-}
+}*/
 
 article a:hover,
     article a:focus {
-        transform: scale(1.5);
+        transform: scale(1.1);
+        transition: 1s;
         background-color: #2F4F4F;
         color: #DCDCDC;
         width: 25%;
@@ -119,3 +90,156 @@ article a:hover {
     color: white;
 }
 
+h3 {
+    display: block;
+}
+.social__links {
+    display: grid;
+    position: fixed;
+    right: 1.5rem;
+    bottom: 6rem;
+    grid-template-columns: 5rem 5rem;
+    grid-template-rows: 5rem 5rem;
+}
+
+.social__links img {
+    width: 5rem;
+    
+}
+.social__links {
+    border: solid;
+    border-radius: 1rem;
+    position: relative;
+    display: contents;
+}
+
+footer> a {
+    width: 5rem;
+    background-color: #DCDCDC;
+    border-radius: 20rem;
+    border: solid white;
+    position: fixed;
+    left: 2rem;
+    bottom: 6rem;
+}
+footer>a:hover{
+    background-color: #2F4F4F;
+    transition: 1s;
+
+}
+
+
+.social__links img {
+    width: 5rem;
+    border: solid white;
+    border-radius: 5rem;}
+.social__links img:hover,
+    .social__links img:focus{
+    background-color: #2F4F4F;
+    transition: 1s;
+}
+
+
+
+
+
+/*Ici on est sur du portable*/
+@media screen and (max-width: 480px) {
+
+body{
+    margin: 1rem;
+}
+
+header img {
+    width: 15rem;
+
+}
+
+
+
+
+.about {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+ul {
+    padding-left: 0;
+}
+
+article a{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+footer> a{
+    position: relative;
+    display: block;
+}
+
+.social__links{
+    display: contents;
+}
+
+
+
+
+}
+
+
+/* Ici on est sur de la tablette*/
+@media screen and (min-width: 480px) {
+    
+body{
+    margin: 1rem;
+}
+
+header img {
+    width: 15rem;
+
+}
+
+
+.about {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+ul {
+    padding-left: 0;
+}
+
+article a{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+footer> a{
+    position: relative;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-whidth: 1200px){
+    .social__links img {
+        width: 5rem;
+        border: solid white;
+        border-radius: 5rem;
+    }
+}
