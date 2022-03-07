@@ -24,8 +24,9 @@ h1 {
     text-align: center;
 }
 
-h1, h2 {
-    text-decoration: underline;
+h1, h2, h3 {
+    color: black;
+    text-decoration: underline white;
     ;
 }
 
@@ -104,7 +105,8 @@ h3 {
 
 .social__links img {
     width: 5rem;
-    
+    margin: 1rem;
+
 }
 .social__links {
     border: solid;
@@ -169,6 +171,11 @@ ul {
     padding-left: 0;
 }
 
+ul a {
+    font-size: medium;
+    
+}
+
 article a{
     margin: 1rem;
     padding: 1rem;
@@ -224,12 +231,15 @@ footer> a{
 }
 
 
+
 }
 
 @media screen and (min-whidth: 1200px){
     .social__links img {
         width: 5rem;
         border: solid white;
-        border-radius: 5rem;
+        border-radius: 5rem; 
     }
+
+
 }
