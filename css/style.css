@@ -27,7 +27,6 @@ h1 {
 h1, h2, h3 {
     color: black;
     text-decoration: underline white;
-    ;
 }
 
 
@@ -35,7 +34,6 @@ h1, h2, h3 {
     background-color: 	#696969;
     padding: 1rem 2rem 3rem 2rem;
     margin: 1rem 3rem 1rem 3rem;
-    box-shadow: #DCDCDC 2rem 2rem;
     border: solid;
     border-radius: 5rem;
 }
@@ -58,20 +56,10 @@ article a {
     list-style-type: none;
     text-transform: uppercase;
     border: solid;
-    margin: 2rem;
     border-radius: 5rem;
     color: white;
     background-color: #696969;;
 }
-
-
-/*.left {box-shadow: rgba(240, 46, 170, 0.4)  -5px -5px, rgba(240, 46, 170, 0.3) -10px -10px, rgba(240, 46, 170, 0.2) -15px -15px, rgba(240, 46, 170, 0.1) -20px -20px, rgba(240, 46, 170, 0.05) -25px -25px;
-*background-color: white;
-}*/
-
-/*.right {box-shadow: rgba(240, 46, 170, 0.4) 5px -5px, rgba(240, 46, 170, 0.3) 10px -10px, rgba(240, 46, 170, 0.2) 15px -15px, rgba(240, 46, 170, 0.1) 20px -20px, rgba(240, 46, 170, 0.05) 25px -25px;
-background-color: white;
-}*/
 
 article a:hover,
     article a:focus {
@@ -124,26 +112,22 @@ footer> a {
     left: 2rem;
     bottom: 6rem;
 }
-footer>a:hover{
+footer>a:hover
+    footer>a:focus {
     background-color: #2F4F4F;
     transition: 1s;
-
 }
-
 
 .social__links img {
     width: 5rem;
     border: solid white;
     border-radius: 5rem;}
+
 .social__links img:hover,
     .social__links img:focus{
     background-color: #2F4F4F;
     transition: 1s;
 }
-
-
-
-
 
 /*Ici on est sur du portable*/
 @media screen and (max-width: 480px) {
@@ -154,17 +138,12 @@ body{
 
 header img {
     width: 15rem;
-
 }
-
-
-
 
 .about {
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
 
 ul {
@@ -173,7 +152,6 @@ ul {
 
 ul a {
     font-size: medium;
-    
 }
 
 article a{
@@ -190,9 +168,6 @@ footer> a{
     display: contents;
 }
 
-
-
-
 }
 
 
@@ -205,19 +180,6 @@ body{
 
 header img {
     width: 15rem;
-
-}
-
-
-.about {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-}
-
-ul {
-    padding-left: 0;
 }
 
 article a{
@@ -229,17 +191,5 @@ footer> a{
     position: relative;
     display: block;
 }
-
-
-
-}
-
-@media screen and (min-whidth: 1200px){
-    .social__links img {
-        width: 5rem;
-        border: solid white;
-        border-radius: 5rem; 
-    }
-
 
 }
