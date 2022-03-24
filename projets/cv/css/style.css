@@ -4,11 +4,15 @@ html{
 
 body{
   font-size: 1.5rem;
-  width: 98%;
+  width: 100%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-color: linen;
+  background: #0099F7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  font-family: 'Oswald', sans-serif;
 }
 
 .header__title{
@@ -17,7 +21,7 @@ body{
   margin: 1rem 1rem;
   background-color: black;
   color: white;
-  box-shadow: 5px 5px 5px burlywood;
+  box-shadow: 5px 5px 5px #0099F7;
 }
 
 .header__subtitle{
@@ -26,8 +30,10 @@ body{
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgb(239, 239, 239);
-}
+  background: #0099F7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;}
 
 .header__title-subtitle-left,
   .header__title-subtitle-right{
@@ -42,33 +48,48 @@ body{
 
 
 .header__title-nav{
-  background-color: rgba(239, 239, 239, 1);
+  background: #0099F7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .header__title-nav-ul{
-  display: flex;
-  flex-direction: column;
+
   margin-top: 0;
   padding: 0;
-  background-color: rgb(239, 239, 239);
   margin-bottom: 0;
-  align-items: center;
+  width: fit-content;
+
 }
+
+
 
 .header__title-nav-li{
  list-style-type: none;
  font-size: 1.3rem;
- width: calc(100% / 5);
+width: 10rem;
  text-align: center;
  border: solid 1px;
- border-radius: 0;
- width: fit-content;
+ border-radius: 20rem;
  font-size: 1.5rem;
+;
 }
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
 
 .header__title-nav-li:hover,
   .header__title-nav-li:focus{
-      background-color: burlywood;
+      background-color: black;
+      color: white;
+      transition: 1s;
 }
 
 
@@ -94,8 +115,14 @@ h3{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
-  
 }
+
+h3:hover,
+  h3:focus{
+    background-color: black;
+    color: white;
+    transition: 1s;
+  }
 
 .main__container--title{
   background-color: black;
@@ -128,7 +155,7 @@ h3{
 
 .profil__article-content-first{
   grid-area: 1 / 1 / 2 / 2;
-  background-color: rgb(239, 239, 239);
+  background-color: transparent;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -142,7 +169,7 @@ h3{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: burlywood;
+
   grid-area: 1 / 2 / 2 / 3;
 }
 
@@ -153,14 +180,14 @@ width: 10rem;
 .profil__article-content-third{
   grid-area: 2 / 1 / 3 / 2;
   display: flex;
-  background-color: burlywood;
+
   justify-content: space-around;
 
 }
 
 .profil__article-content-four{
   grid-area: 2 / 2 / 3 / 3;
-  background-color: rgb(239, 239, 239);
+
   display: flex;
   justify-content: space-around;
 
@@ -178,18 +205,13 @@ width: 10rem;
 }
 
 #link{width: 100%;
+  border: none;
+  background-color: inherit;
 }
-
 
 .table{
   display: inline-table;
   text-align: initial;
-}
-
-
-
-.centrei :last-of-type{
-  list-style-type: none;
 }
 
 ul{
@@ -197,7 +219,8 @@ ul{
 }
 
 th{
-  background-color: burlywood;
+
+
 }
 
 h4{
@@ -209,6 +232,12 @@ h4{
 a{
   font-weight: bolder;
 }
+
+a:hover,
+  a:focus{
+    color: white;
+  }
+
 figcaption{
 }
 
@@ -221,6 +250,7 @@ figcaption{
       background-color: rgb(239, 239, 239);
       padding: 0.5rem;
 }
+
 
 .softskill{
   display: flex;
@@ -245,7 +275,16 @@ figcaption{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: goldenrod;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.footer__title{
+  border-radius: 20rem;
+  padding: 0.5rem;
+  text-decoration: underline;
+}
+
+table{
+  margin-top: 0.5rem;
 }
