@@ -1,116 +1,272 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>MonCV</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Curriculum Vitae</title>
 </head>
-
 <body>
     <header>
-
-
-
-        <img class="header__img" src="./img/Mathieu.jpg" alt="Photo_profil">
-        <h1>Développeur Web</h1>
-
+        <h1 class="header__title">Développeur Web</h1>
+        <div class="header__subtitle">
+            <h2 class="header__title-subtitle-left">Poltorak</h2>
+            <img class="header__title-img" src="img/Mathieu.jpg" alt="" >
+            <h2 class="header__title-subtitle-right">Mathieu</h2>
+        </div>
+        
+        <nav class="header__title-nav">
+            <ul class="header__title-nav-ul">
+                <li class="header__title-nav-li"><a href="#profil">Profil</a></li>
+                <li class="header__title-nav-li"><a href="#formations">Formations</a></li>
+                <li class="header__title-nav-li"><a href="#experiences">Experiences</a></li>
+                <li class="header__title-nav-li"><a href="#competences">Compétences</a></li>
+                <li class="header__title-nav-li"><a href="#divers">Divers</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-    <main>
-        <section class="formation">
-            <h2>Formations</h2>
+    <main class="main__container">
+        <div class="main__container--title">
+            <h3 class="main__title-category" id="profil">Profil</h3>
+        </div>
+        <section class="main__container-profil">
+                <div class="profil__article-content-first">
+                    <button id="link">
+                            <img class="profil__article-content-first-img" src="img/icons8-chalet-100.png" alt="">
+                        <div class="coordonnees hide">
+                            <p>39 avenue anatole France</p>
+                            <p>93600 Aulnay sous bois</p>
+                        </div>
+                    </button>
+                </div>
+                <div class="profil__article-content-second">
+                    <a href="mailto:poltorakmathieu@gmail.com">    <img src="img/icons8-mail.svg" alt=""></a>
 
-            <p div class="date">2022</p>
-            <p>Prépatation du Titre Professionnel de developpeur Web avec O'clock</p>
-            <p div class="date">2009</p>
-            <p> Certificat de Qualifition professionnelles(CQP) pour le métier de convoyeur de fonds</p>
-            <p div class="date">2006</p>
-            <p>Formation Adjoint de Sécurité (ADS)</p>
-            <p div class="date">2005</p>
-            <p>BTS Management des unités commerciales (niveau première année)</p>
-            <p div class="date">2004</p>
-            <p>Baccalauréat Action Communication Commerciale (acquis)</p>
-            <p div class="date">2001</p>
-            <p>Brevet des collèges</p>
+                </div>
+                <div class="profil__article-content-third">
+                    <a href="tel:+33661022646"><img src="img/icons8-téléphone-de-bureau-100.png" alt=""></a>
+                </div>
+                <div class="profil__article-content-four"> 
+                    <a href="https://www.linkedin.com/in/mathieu-poltorak/"><img class="profil__article-content-four-img" src="img/icons8-linkedin.svg" alt=""></a>
+                </div>
+                <div class="profil__article-content-five">
+
+                </div>
+                <div class="profil__article-content-six"></div>
+
         </section>
-        <section class="previous_job">
-            <h2>Experiences professionnelles</h2>
+        
+        <section class="main__container-formation">
+        <div class="main__container--title">
+            <h3 class="main__title-category" id="formations">Formations</h3>
+        </div>
 
 
-            Avril 2008~Actuellement
-            convoyeur de fonds
-            Loomis Brinks
 
-            Mai 2006
-            Adjoint de Sécurité
-            Préfécture de police de Paris
+        <div class="table">
 
-            Janvier 2006
-            Vacataire sur salon
-            Parc des exposition de Villepinte
+            <table>
+            <tr>
+                <th>Dates</th>
+                <th>Intitulé de la formation</th>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>Formation de développeur Web</td>
+            </tr>
+            <tr>
+                <td>2009</td>
+                <td>Certificat de Qualification professionnelle(CQP) pour le métier de convoyeur de fonds</td>
+            </tr>
+            <tr>
+                <td>2006</td>
+                <td>Formation d'Adjoint de sécurité (ADS)</td>
+            </tr>
+            <tr>
+                <td>2005</td>
+                <td>BTS Management des unités commerciales (niveau première année)</td>
+            </tr>
+            <tr>
+                <td>2004</td>
+                <td>Baccalauréat Action Communication Commerciale (acquis)</td>
+            </tr>
+            <tr>
+                <td>2001</td>
+                <td>Brevet des collèges</td>
+            </tr>
+            </table>
+            </div>
 
-            Juillet/Aout 2004
-            Gardien d'immeubles
-            Logement Francais
         </section>
-        <section class="skill">
-        <h2>Compétences</h2>
-            Esprit d'équipe
-            Gestion du stress
-            Travail en autonomie
-            Plannification des tâches
-            Sens des résponsabilités
-            Sens du contact
-            remonté d'informations
-            Empathie
+        <section class="main__container-experiences">
+        <div class="main__container--title">
+            <h3 class="main__title-category" id="experiences">Experiences</h3>
+        </div>
+
+
+
+        <div class="exp">
+            <h4>Experiences professionnelles</h4>
+
+            <table class="table">
+                <tr>
+                    <th>Dates</th>
+                    <th>Poste</th>
+                    <th>Entreprise</th>
+                </tr>
+                <tr>
+                    <td>Avril 2008-Actuellement</td>
+                    <td>Convoyeur de fonds</td>
+                    <td>Loomis/Brinks</td>
+                </tr>
+                <tr>
+                    <td>Mai 2006</td>
+                    <td>Adjoint de sécurité (ADS)</td>
+                    <td>Préfécture de police de Paris</td>
+                </tr>
+                <tr>
+                    <td>Juillet/Août 2004</td>
+                    <td>Gardien d'immeubles</td>
+                    <td>Logement Francais</td>
+                </tr>
+
+            </table>
+    </div>
         </section>
-        <section class="language">
-            <h2>Langues</h2>
-            Francais
-            Anglais
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+        <section class="main__container-competences">
+            <div class="main__container--title">
+            <h3 class="main__title-category" id="competences">Compétences</h3>
+        </div>
+        <h4>Framework</h4>
+
+            <div class="framework">
+                <div class="framework__left">
+                <img src="img/icons8-html-5.svg" alt="html5">
+                <figcaption>html5</figcaption>
+                <img src="img/icons8-css3.svg" alt="css3">
+                <figcaption>css3</figcaption>
+                </div>
+                <div class="framework__right">
+                <img src="img/icons8-javascript.svg" alt="javascript">
+                <figcaption>javascript</figcaption>
+                <img src="img/icons8-logo-php-50.png" alt="php">
+                <figcaption>php</figcaption>
+            </div>
+            </div>
+
+
+
+
+
+        <h4>Soft Skill</h4>
+
+        <table class="table">
+
+
+            <tr>
+                <td><li>Esprit d'équipe</li></td>
+                <td><li>Sens des résponsabilités</li></td>
+            </tr>
+            <tr>
+                <td><li>Gestion du stress</li></td>
+                <td><li>Sens du contact</li></td>
+            </tr>
+            <tr>
+                <td><li>Travail en autonomie</li></td>
+                <td><li>Remontée d'information</li></td>
+            </tr>
+            <tr>
+                <td><li>Plannification des tâches</li></td>
+                <td><li>Empathie</li></td>
+            </tr>
+        </table>
+
+
+        <div class="lang">
+            <h4>Langues</h4>
+            <table class="table">
+
+            <tr>
+                  
+                   <td>Francais</td>
+                   <td>&#x25b6;&#x25b6;&#x25b6;&#x25b6;&#x25b6;&#x25b6;&#x25b6;&#x25b6;&#x25b6;&#x25b6;</td>
+            </tr>
+                   
+            <tr>
+                
+                    
+                <td>Anglais</td>
+                <td>&#x25b6;&#x25b6;&#x25b6;&#x25b6;&#x25b6;&#x25b6;&#x25b6;&#x25b7;&#x25b7;&#x25b7;</td>
+         </tr>
+                         
+
+            </table>
+
+    </div>
+
+
         </section>
-        <section class="hobbies">
-            <h2>Centre d'intérêts</h2>
-            sport
-            cinéma
-            lecture
-        </section>
-    </main>
-    <aside class="profil">
-        <h2>Mon Profil
-        </h2>
-        <h3>Nom</h3>
-        <p>POLTORAK Mathieu</p>
-        <h3>Adresse</h3>
-        <p>39, avenue anatole france. 93600 Aulnay sous bois</p>
-        <h3>Adresse e-mail</h3>
-        <a href="mailto:poltorakmathieu@gmail.com"></a>
-        <h3>Numéro de téléphone</h3>
-        <a href="tel:+33661022646"></a>
-        <h3>Date de naissance</h3>
-        26 octobre 1985
-        <h3>Permis de conduire</h3>
-        <p>Permis B</p>
-        <h3>Sexe</h3>
-        <p>Homme</p>
-        <h3>Etat civil</h3>
-        <p>En coupe. Deux enfants</p>
+        <section class="main__container-divers">
+            <div class="main__container--title">
+            <h3 class="main__title-category" id="divers">Divers</h3>
+            </div>
+
+
+            <div class="centrei">
+                <h4>Centres d'intérêts</h4>
+                <table class="table">
+                    
+                    <ul>
+                        <li>Sport</li>
+                        <li>Ciména</li>
+                        <li>Lécture</li>
+                    </ul>
     
-    </aside>
-</div>
-    <footer></footer>
+    
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer__container-title">
+        <h3 class="footer__title"> <a href="../../index.html"> retour à l'acceuil</a></h3>
+        </div>
+    </footer>
 
 
 
 
 
+    <script src="js/index.js"></script>
 </body>
-
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
