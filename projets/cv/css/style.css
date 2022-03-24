@@ -4,9 +4,10 @@ html{
 
 body{
   font-size: 1.5rem;
-  width: 100%;
+  width: 90%;
   height: 100%;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header__title{
@@ -25,7 +26,6 @@ body{
   align-items: center;
   flex-wrap: wrap;
   background-color: rgb(239, 239, 239);
-
 }
 
 .header__title-subtitle-left,
@@ -52,7 +52,6 @@ body{
   background-color: rgb(239, 239, 239);
   margin-bottom: 0;
   align-items: center;
-
 }
 
 .header__title-nav-li{
@@ -61,15 +60,15 @@ body{
  width: calc(100% / 5);
  text-align: center;
  border: solid 1px;
- border-radius: 20%;
-
-
+ border-radius: 0;
+ width: fit-content;
+ font-size: 1.5rem;
 }
 
 .header__title-nav-li:hover,
   .header__title-nav-li:focus{
       background-color: burlywood;
-  }
+}
 
 
 .main__title-category{
@@ -116,27 +115,14 @@ h3{
 }
 
 
-
-.profil__left-article{
-
-  
-}
-
-.profil__right-article{
-
-
-}
-
 .profil__right-article img{
   width: 4rem;
-  
 }
 
 .profil__right-article p{
   margin-top: 0;
   margin-bottom: 0;
   font-size: 1.5rem;
-  ;
 }
 
 .profil__article-content-first{
@@ -145,14 +131,10 @@ h3{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  
-
 }
 
 .coordonnees{
-
   margin-top: 1rem;
-  
 }
 
 .profil__article-content-second{
@@ -184,12 +166,10 @@ width: 10rem;
 }
 
 .profil__article-content-four p{
-
 }
 
 .profil__article-content-four img{
   width: 10rem;
-
 }
 
 .hide{
@@ -197,7 +177,6 @@ width: 10rem;
 }
 
 #link{width: 100%;
-
 }
 
 
@@ -230,8 +209,8 @@ a{
   font-weight: bolder;
 }
 figcaption{
-  
 }
+
 .framework{
   display: flex;
   justify-content: space-around;
@@ -240,8 +219,6 @@ figcaption{
 .footer__title{
       background-color: rgb(239, 239, 239);
       padding: 0.5rem;
-  
-  
 }
 
 .softskill{
@@ -259,15 +236,9 @@ figcaption{
   text-align: left;
 }
 
-
-
-
-
 .footer__container-title{
   background-color: black;
 }
-
-
 
 #navtool{
   display: block;
@@ -275,13 +246,5 @@ figcaption{
   margin-right: auto;
   background-color: goldenrod;
   border-radius: 50%;
+  cursor: pointer;
 }
-
-
-
-
-
-/*
-test*/
-
-
