@@ -10,4 +10,17 @@ function handletest(event) {
     event.preventDefault();
     testImg.classList.toggle('hide');
     testTxt.classList.toggle('hide');
+};
+
+const nav = document.getElementById('navtool');
+const navbar = document.querySelector('.header__title-nav-ul');
+console.log(navbar);
+nav.addEventListener('click', handlenav);
+function handlenav(event) {
+    event.preventDefault();
+    console.log('ici c\'est paris');
+    navbar.classList.toggle('hide');
+
 }
+
+
