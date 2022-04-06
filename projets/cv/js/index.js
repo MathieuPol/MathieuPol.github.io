@@ -1,26 +1,43 @@
-const test = document.querySelector("#link");
-console.log(test);
-test.addEventListener('click', handletest);
-const testImg = document.querySelector('.profil__article-content-first-img');
-const testTxt = document.querySelector('.coordonnees');
-console.log(testTxt);
+//Bouton Home
 
-function handletest(event) {
-    console.log('on est ici');
+const home = document.querySelector("#link");
+
+home.addEventListener('click', handlehome);
+const homeImg = document.querySelector('.profil__article-content-first-img');
+const homeTxt = document.querySelector('.coordonnees');
+
+
+function handlehome(event) {
     event.preventDefault();
-    testImg.classList.toggle('hide');
-    testTxt.classList.toggle('hide');
+    homeImg.classList.toggle('hide');
+    homeTxt.classList.toggle('hide');
 };
 
 const nav = document.getElementById('navtool');
 const navbar = document.querySelector('.header__title-nav-ul');
-console.log(navbar);
+
 nav.addEventListener('click', handlenav);
 function handlenav(event) {
     event.preventDefault();
-    console.log('ici c\'est paris');
     navbar.classList.toggle('hide');
-
 }
+
+
+// Bouton tel
+
+const tel = document.querySelector('.profil__article-content-third');
+const telphone = document.querySelector('.phone');
+const phoneLink = document.querySelector('.phoneImg');
+
+tel.addEventListener('click', handletel);
+function handletel(event) {
+    event.preventDefault();
+    telphone.classList.toggle('hide');
+    phoneLink.classList.toggle('hide');
+}
+
+
+
+
 
 

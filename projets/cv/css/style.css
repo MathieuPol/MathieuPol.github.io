@@ -29,9 +29,6 @@ body{
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  background: #0099F7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;}
 
 .header__title-subtitle-left,
@@ -42,12 +39,10 @@ body{
 .header__title-img{
   width: 10rem;
   border-radius: 50%;
+  filter: drop-shadow(0 0 0.75rem crimson);
 }
 
 .header__title-nav{
-  background: #0099F7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,6 +142,11 @@ h3:hover,
   justify-content: space-around;
 }
 
+.profil__article-content-first-img ,
+  .phoneImg{
+  cursor: pointer;
+}
+
 .coordonnees{
   margin-top: 1rem;
 }
@@ -185,11 +185,13 @@ width: 10rem;
 
 .hide{
   display: none;
+
 }
 
 #link{width: 100%;
   border: none;
   background-color: inherit;
+
 }
 
 .table{
@@ -208,7 +210,6 @@ th{
   border-collapse: 1rem 1rem;
 
 }
-
 
 
 
@@ -296,7 +297,7 @@ table{
 body{
   width: 90%;
   font-size: 2rem;
-  font-family:'Josefin Sans', sans-serif;;
+
 }
 
 
