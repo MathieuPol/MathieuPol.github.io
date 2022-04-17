@@ -80,10 +80,6 @@ a{
 .main__title-category{
   font-size: 2rem;
 }
-
-.main__container{
-}
-
 section{
   margin-top: 0;
   text-align: center;
@@ -176,9 +172,6 @@ width: 10rem;
 
 }
 
-.profil__article-content-four p{
-}
-
 .profil__article-content-four img{
   width: 10rem;
 }
@@ -191,7 +184,6 @@ width: 10rem;
 #link{width: 100%;
   border: none;
   background-color: inherit;
-
 }
 
 .table{
@@ -211,8 +203,6 @@ th{
 
 }
 
-
-
 h4{
   text-decoration: underline;
   font-size: 2rem;
@@ -227,9 +217,6 @@ a:hover,
   a:focus{
     color: white;
   }
-
-figcaption{
-}
 
 .framework{
   display: flex;
