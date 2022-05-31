@@ -29,6 +29,10 @@ h1, h2, h3 {
     text-decoration: underline white;
 }
 
+.hide{
+    display: none;
+}
+
 
 .about {
     background-color: 	#696969;
