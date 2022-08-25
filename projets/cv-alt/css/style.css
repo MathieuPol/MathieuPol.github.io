@@ -31,6 +31,7 @@ aside{
 
 section{
     background-color: rgb(91, 22, 87);
+    padding-bottom: 8em;
 }
 
 .box{
@@ -47,4 +48,8 @@ section{
 	-moz-transform: scale(1,1) rotate(0)skew(0,0) translate(0,0); 
 	transform-origin: 50% 50%; 
  
+}
+
+.backCustom{
+    background-color: rgb(180, 154, 201);
 }
